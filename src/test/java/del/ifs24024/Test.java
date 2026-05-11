@@ -1,6 +1,8 @@
-package del.ifs18005;
+package del.ifs24024;
 
 import java.util.Scanner;
+
+import del.ifs24024.program1;
 
 public class Test {
 
