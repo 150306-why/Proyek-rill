@@ -1,1 +1,6 @@
-Minimum cost: -1
+[SUKSES] Root P001 (Adam) terdaftar sebagai Patient Zero.
+[ERROR] Root sudah terdaftar di dalam sistem!
+[ERROR] Pasien dengan ID P999 tidak ditemukan.
+[ERROR] Pasien dengan ID P001 sudah ada di dalam sistem.
+[ERROR] Pasien dengan ID P888 tidak ditemukan.
+[ERROR] Pasien dengan ID P123 tidak ditemukan.

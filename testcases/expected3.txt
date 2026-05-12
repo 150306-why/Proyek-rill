@@ -1,0 +1,8 @@
+[SUKSES] Root P001 (Adam) terdaftar sebagai Patient Zero.
+[SUKSES] P002 (Budi) terdaftar dan terhubung dengan P001.
+[SUKSES] P003 (Caca) terdaftar dan terhubung dengan P002.
+[SUKSES] P004 (Dedi) terdaftar dan terhubung dengan P003.
+[SUKSES] Status P002 berubah menjadi TERINFEKSI.
+[SUKSES] Status P004 berubah menjadi TERINFEKSI.
+[SUKSES] Status P001 berubah menjadi SEMBUH.
+[TOTAL_AKTIF] Klaster P003 memiliki 2 orang berstatus TERINFEKSI.
