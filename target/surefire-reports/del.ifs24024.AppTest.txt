@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: del.ifs18005.AppTest
+Test set: del.ifs24024.AppTest
 -------------------------------------------------------------------------------
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s -- in del.ifs18005.AppTest

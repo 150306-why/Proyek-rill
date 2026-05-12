@@ -1,9 +1,5 @@
-package del.ifs18005;
+package del.ifs24024;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
