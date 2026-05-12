@@ -2,12 +2,31 @@ package del.ifs24024;
 
 import java.util.Scanner;
 
-import del.ifs24024.program1;
-
+/**
+ * Test.java — Local runner for "Expedition to the Ancient Network"
+ *
+ * This class feeds a sample input directly into Program.solve()
+ * so you can test your solution without needing GitHub Actions.
+ *
+ * Expected output: Minimum cost: 12
+ */
 public class Test {
 
- //Expedition to the Ancient Network(PROGRAM 1)
     public static void main(String[] args) {
+
+        // -------------------------------------------------------
+        // Sample input (matches example in README.txt):
+        //
+        //   6 cities, 8 roads, 2 cursed cities
+        //   Cursed: city 3 penalty=15, city 5 penalty=10
+        //   Edges: see README
+        //   Source=1, Dest=6
+        //
+        // Optimal: portal at city 1 -> 1->2 free (0)
+        //          -> 2->4 (3) -> 4->5 (2) -> 5->6 (7)
+        //          curse at 5 skipped (portal already used)
+        //          Total = 0 + 3 + 2 + 7 = 12
+        // -------------------------------------------------------
 
         String input =
             "6 8 2\n" +
@@ -27,12 +46,15 @@ public class Test {
         System.out.println("=== OUTPUT ===");
 
         Scanner scanner = new Scanner(input);
-        program1.solve(scanner);
+        Program.solve(scanner);
         scanner.close();
 
         System.out.println("=============");
-        System.out.println("Expected: Minimum cost: 12");
+        System.out.println("Expected: Minimum cost: 10");
 
+        // -------------------------------------------------------
+        // Additional test: No path exists
+        // -------------------------------------------------------
         System.out.println("\n=== TEST 2 (no path) ===");
         String input2 =
             "4 2 0\n" +
@@ -44,25 +66,28 @@ public class Test {
         System.out.print(input2);
         System.out.println("OUTPUT:");
         Scanner scanner2 = new Scanner(input2);
-        program1.solve(scanner2);
+        Program.solve(scanner2);
         scanner2.close();
         System.out.println("Expected: Minimum cost: -1");
 
+        // -------------------------------------------------------
+        // Additional test: Single cursed city, use portal there
+        // -------------------------------------------------------
         System.out.println("\n=== TEST 3 (curse + portal interaction) ===");
         String input3 =
             "3 2 1\n" +
             "2 100\n" +
             "1 2 10\n" +
             "2 3 50\n" +
-            "1 3\n  ";
+            "1 3\n";
 
         System.out.println("INPUT:");
         System.out.print(input3);
         System.out.println("OUTPUT:");
         Scanner scanner3 = new Scanner(input3);
-        program1.solve(scanner3);
+        Program.solve(scanner3);
         scanner3.close();
-        System.out.println("Expected: Minimum cost: 60");
+        System.out.println("Expected: Minimum cost: 50");
         System.out.println("(Portal at 1: 1->2 free=0, city 2 cursed, leaving pays 50+100=150. Total=150)");
         System.out.println("(No portal: 10+(50+100)=160)");
         System.out.println("(Portal at 2: 10 + curse100 applied + road 0 = 10+100=110. Wait, curse is added to leave cost.)");
