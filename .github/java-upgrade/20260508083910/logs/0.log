@@ -1,0 +1,26 @@
+2026-05-08T08:39:10.853Z [INFO] ----------------------invoke appmod-list-jdks----------------------
+2026-05-08T08:39:10.854Z [INFO] [Tool.invoke]({name: appmod-list-jdks, modelId: auto, input: {
+  "additionalSearchPaths": [
+    "c:\\Program Files\\Java",
+    "c:\\Java",
+    "c:\\jdk",
+    "c:\\Users\\johan\\.jdks"
+  ],
+  "version": "21",
+  "projectPath": "c:\\java\\Arstrudat\\Proyek rill"
+}}).
+2026-05-08T08:39:10.856Z [INFO] [Tool.invoke] do invoke.
+2026-05-08T08:39:10.888Z [INFO] [Tool.invoke]({result: {
+  "message": "No JDK installations found."
+}}).
+2026-05-08T08:39:10.889Z [INFO] ----------------------invoked appmod-list-jdks----------------------
+2026-05-08T08:39:11.145Z [INFO] ----------------------invoke appmod-list-mavens----------------------
+2026-05-08T08:39:11.146Z [INFO] [Tool.invoke]({name: appmod-list-mavens, modelId: auto, input: {
+  "includeVersion": true,
+  "projectPath": "c:\\java\\Arstrudat\\Proyek rill"
+}}).
+2026-05-08T08:39:11.146Z [INFO] [Tool.invoke] do invoke.
+2026-05-08T08:39:11.466Z [INFO] [Tool.invoke]({result: {
+  "message": "We found following maven installations in your system:\n\n1. Maven 3.9.12\n   📁 Path: C:\\Users\\johan\\Downloads\\apache-maven-3.9.12-bin\\apache-maven-3.9.12\\bin\n   🏷️ Source: PATH\n\nTotal: 1 Maven installation(s) found"
+}}).
+2026-05-08T08:39:11.467Z [INFO] ----------------------invoked appmod-list-mavens----------------------
